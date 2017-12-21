@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.gome.dao.sqltest.MultipleDataSource;
 import com.gome.modle.TmAppCaseInfo;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -16,7 +17,9 @@ public class TestGome {
 	private TmAppCaseInfoService tmAppCaseInfoService;
 	@Test
 	public void test(){
+		MultipleDataSource.setDataSourceKey("mySqlDataSource");
 		TmAppCaseInfo t1=tmAppCaseInfoService.getInfo54();
+		MultipleDataSource.setDataSourceKey("sqlServerDataSource");
 		TmAppCaseInfo t2=tmAppCaseInfoService.getInfo55();
 	}
 }

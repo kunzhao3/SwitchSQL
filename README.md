@@ -1,5 +1,5 @@
                                    springmvc+mybatis 多数据源
-1.写一个MultipleDataSource 类来继承AbstractRoutingDataSource，并重写determineCurrentLookupKey（）方法，来达到动态切换数据库
+1.写一个MultipleDataSource 类来继承AbstractRoutingDataSource，并重写determineCurrentLookupKey()方法，来达到动态切换数据库
 2.创建spring-config.xml文件,配置扫描，properties文件的读取
 3.创建jpa-context.xml文件，配置jdbc属性，创建sqlSessionFactory实例
 4.TestSql.java可以测试Mybatis注解方式的查询，也可以用TestGome.java进行JUnit测试Mybatis xml方式的查询

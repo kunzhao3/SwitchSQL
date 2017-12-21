@@ -4,3 +4,4 @@
 3.创建jpa-context.xml文件，配置jdbc属性，创建sqlSessionFactory实例
 4.TestSql.java可以测试Mybatis注解方式的查询，也可以用TestGome.java进行JUnit测试Mybatis xml方式的查询
 5.注意MultipleDataSource.setDataSourceKey()中的值必须和jpa-context.xml配置的beans属性一致
+6.TestGome.java报错，Java Build Path-->>Add Library  JUnit4库即可

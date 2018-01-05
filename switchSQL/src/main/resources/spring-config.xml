@@ -9,5 +9,5 @@
     <!-- 激活annotation功能 -->  
     <context:annotation-config />  
     <context:property-placeholder location="classpath*:/jdbc.properties" />
-    <import resource="classpath:jpa-context.xml"/>
+    <import resource="classpath:jdbc-context.xml"/>
 </beans>  
